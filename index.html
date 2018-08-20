@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -15,8 +14,27 @@
       
       <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 
-    <style> body {padding: 0; padding-bottom: 10%; margin: 0; background-color: #e50000; } canvas {vertical-align: top;} 
+    <style> 
+        html {
         
+            width: 100%; 
+            height: 100%; 
+            
+        }
+        
+        body {
+        padding: 0; 
+        width: 100%; 
+        height: 100%; 
+        padding-bottom: 10%; 
+        margin: 0; 
+        background-color: #e50000; 
+        }
+        canvas {
+        vertical-align: top;
+        } 
+        
+    
         @font-face {
 font-family: Impact;
 src: url(/impact.ttf);
@@ -58,8 +76,6 @@ src: url(/impact.ttf);
     
         }
         
- 
-        
         .info{
     text-align: center;
     max-width:560px;
@@ -74,11 +90,13 @@ src: url(/impact.ttf);
             
 }
       
-      gifImage {
+      .gifImage {
         
-        position: fixed;
-        max-width: 0px;
-        max_height: 0px;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        
+        
         
       }
       
@@ -89,9 +107,11 @@ src: url(/impact.ttf);
   </head>
   <body>
       
+      <img src="meltingRed.gif" class="gifImage" alt="Melting"> 
+      
 <img id="image0" src="http://83.236.229.215:81/mjpg/video.mjpg" width="640" max-width="640" height="480" class="center" alt="" title="Click here to enter the camera located in Germany, region Nordrhein-Westfalen, Koeln">
     
- <img src="meltingRed.gif" class="gifImage" alt="Melting"> 
+ 
  
 <!--  <img id="image0" src="http://212.60.62.51:8080/mjpg/video.mjpg" width="640" max-width="640" height="480" class="center" alt="" title="Click here to enter the camera located in Switzerland, region Bern, Biel">-->
 
