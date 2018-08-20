@@ -13,7 +13,7 @@ function setup() {
     gifHeight = windowHeight;
   }
   
-  image1 = createImg("meltingRed.gif");
+  
   image1.position(0,0);
   image1.size(windowWidth, gifHeight);
   
@@ -41,6 +41,7 @@ function setup() {
 
  
 function preload() {
+  image1 = createImg("meltingRed.gif");
 
 }
   
