@@ -12,7 +12,7 @@ function preload() {
 function setup() {
   
    if (windowWidth > 900){
-   gifHeight = windowHeight * 3; 
+   gifHeight = windowHeight * 1.5; 
   } else {
     gifHeight = windowHeight;
   }
