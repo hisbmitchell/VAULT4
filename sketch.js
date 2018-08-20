@@ -4,7 +4,11 @@ var gifHeight;
 var imgArray = [];
 var millisecond;
 
+ 
+function preload() {
+  image1 = createImg("meltingRed.gif");
 
+}
 function setup() {
   
    if (windowWidth > 900){
@@ -39,11 +43,7 @@ function setup() {
   
 
 
- 
-function preload() {
-  image1 = createImg("meltingRed.gif");
 
-}
   
 // function imageCreate(element, x, y) {
 //   element.position(x,y);
