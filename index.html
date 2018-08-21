@@ -35,7 +35,7 @@ font-family: Impact;
 src: url(/impact.ttf);
 }
     a:link {
-    color: darkgray;
+    color: blue;
     background-color: transparent; 
     text-decoration: none;
 }
@@ -47,7 +47,7 @@ src: url(/impact.ttf);
 }
         
         a:visited {
-    color: darkgray;
+    color: black;
     background-color: transparent;
     text-decoration: none;
 }
@@ -88,8 +88,8 @@ src: url(/impact.ttf);
       .gifImage {
         
         position: absolute;
-        height: 200%;
-        width: 100%;
+        height: 0;
+        width: 0;
         }
       
       
@@ -101,18 +101,31 @@ src: url(/impact.ttf);
       
       <script>
           
-//    var gifImageGo = document.getElementsByTagName("isGifImage");
-//    var gif_file = "melting.gif";
+    var gifImageGo = document.getElementsByTagName("isGifImage");
+    var gif_file = "melting.gif";
+          
+          var numOfClicks = 0;
 //      
       window.onclick = myFunction;
 
           // If the user clicks in the window, set the background color of <body> to yellow
           function myFunction() {
 //            document.getElementsByTagName("BODY")[0].style.backgroundColor = "yellow";
+              
+              
+              
+              
+              if (numOfClicks > 1){
+                  document.getElementById("isGifImage").style.height="200%" ;
+                    document.getElementById("isGifImage").style.width="100%" ;
+                  document.getElementById("isGifImage").src ="meltingRed.gif" ;
+                   
+              } 
+              numOfClicks += 1;
 //              
-              document.getElementById("isGifImage").src ="meltingRed.gif" ;
             
-//            gifImageGo.src = gif_file;
+            
+          gifImageGo.src = gif_file;
 }
       
       </script>
@@ -135,9 +148,43 @@ src: url(/impact.ttf);
           <p>VAULT x ON EARTH </p>
          
       </div>
+           
+ 
       <div class="info">
+     
+          <p>SATURDAY 25/08/18 <br><br>
+11PM TIL LATE<br>
+DUROCHER BASEMENT<br>
+ACCESS CODE: 6545<br><br>
+
+++++++++++++++++++++<br><br>
+
+<a href="https://soundcloud.com/akua_b">AKUA</a>
+(NYC)<br>
+[School of Hard Trax]<br><br>
+
+<a href="https://soundcloud.com/wasps-world">RACHEL NOON</a>(NYC)<br>
+[Unter Spinoff / Large Marge]<br><br> 
+
+<a href="https://soundcloud.com/boo-lean">BOO LEAN</a> (PGH)<br>
+[VIA / Hot Mass / Girlfx]<br><br> 
+
+<a href="https://www.mixcloud.com/ceremonies/">CEREMONIES</a>  + <a href="https://soundcloud.com/efemmera">EFEMMERA</a>(TO)<br>
+[ON EARTH]<br>
+<a href="https://soundcloud.com/d_blavatsky">D.BLAVATSKY</a> + <a href="https://soundcloud.com/mariaxw">D-GRADE</a>(MTL)<br>
+[VAULT]<br><br> 
+
+++++++++++++++++++++++<br><br>
+              
+              
+
+ <a href="https://www.eventbrite.ca/e/vault-x-on-earth-tickets-49269695987">$10 pre-sale </a>/ $15 before 2AM / $20 after<br><br>
+
+(403)-837-8255  
+
            
 
+<!--
 SATURDAY 25/08/18 <br><br>
 11 UNTIL LATE <br>
 ACCESS CODE: 6545 ave durocher <br><br>
@@ -156,6 +203,7 @@ Boo Lean  (VIA, Hot Mass/Girlfx, PGH)<br>
 10$ Pre-Sale 
 15$ Before 2 
               20$ After </p> 
+-->
         
       </div>
       
