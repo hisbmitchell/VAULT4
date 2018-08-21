@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <title>VAULT 4</title>
   
-    
-   <link rel="stylesheet" type="text/css" href="/styles/fonts/fonts.css" />
+   <script src="jquery-3.3.1.min.js"></script>
       
-      <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="/styles/fonts/fonts.css" />
+   <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+      
+      
 
     <style> 
         html {
@@ -131,8 +133,20 @@ src: url(/impact.ttf);
           
           var numOfClicks = 0;
           
-      window.ontouchstart = myFunction;
-      //window.onclick = myFunction;
+          //var theElement = document.getElementById("theElement");
+//
+//window.addEventListener("mouseup", tapOrClick, false);
+//theElement.addEventListener("touchend", tapOrClick, false);
+//
+//function tapOrClick(event) {
+//   //handle tap or click.
+//
+//    event.preventDefault();
+//    return false;
+//}
+//          
+//      //window.ontouchstart = myFunction;
+      window.onclick = myFunction;
 //     document.getElementById("clickHere").onclick=myFunction;
 
           // If the user clicks in the window, set the background color of <body> to yellow
