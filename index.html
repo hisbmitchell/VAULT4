@@ -117,7 +117,8 @@ src: url(/impact.ttf);
       <script>
           
     var gifImageGo = document.getElementsByTagName("isGifImage");
-    var gif_file = "melting.gif";
+    var gif_file = "meltingRed2.gif";
+    var gifHeight = "100%";
           
           var numOfClicks = 0;
           
@@ -129,13 +130,19 @@ src: url(/impact.ttf);
           function myFunction() {
 //            document.getElementsByTagName("BODY")[0].style.backgroundColor = "yellow";
               
+              if (screen.width < 1000){
+                  gifHeight = "100%";
+                  
+              }else {
+                  gifHeight = "250%";
+              }
               
               
               
               if (numOfClicks > 1){
-                  document.getElementById("isGifImage").style.height="230%" ;
+                  document.getElementById("isGifImage").style.height=gifHeight ;
                     document.getElementById("isGifImage").style.width="100%" ;
-                  document.getElementById("isGifImage").src ="meltingRed2.gif" ;
+                  document.getElementById("isGifImage").src =gif_file;
                    
               } 
               numOfClicks += 1;
