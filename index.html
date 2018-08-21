@@ -145,7 +145,7 @@ src: url(/impact.ttf);
 //    return false;
 //}
 //          
-//      //window.ontouchstart = myFunction;
+      window.ontouchend = myFunction;
       window.onclick = myFunction;
 //     document.getElementById("clickHere").onclick=myFunction;
 
@@ -160,7 +160,7 @@ src: url(/impact.ttf);
                   gifHeight = "250%";
               }
               
-              if (numOfClicks > 0){
+              if (numOfClicks == 0){
                     document.getElementById("first").style.height="20%" ;
                     document.getElementById("first").style.width="20%" ;
                   document.getElementById("first").src =firstImg;
@@ -170,7 +170,7 @@ src: url(/impact.ttf);
               }
               
               
-              if (numOfClicks > 1){
+              if (numOfClicks == 1){
                   document.getElementById("isGifImage").style.height=gifHeight ;
                     document.getElementById("isGifImage").style.width="100%" ;
                   document.getElementById("isGifImage").src =gif_file;
