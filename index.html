@@ -3,12 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>VAULT 4</title>
-    <script src="libraries/p5.js" type="text/javascript"></script>
-
-    <script src="libraries/p5.dom.js" type="text/javascript"></script>
-    <script src="libraries/p5.sound.js" type="text/javascript"></script>
-
-    <script src="sketch.js" type="text/javascript"></script>
+  
     
    <link rel="stylesheet" type="text/css" href="/styles/fonts/fonts.css" />
       
@@ -95,10 +90,7 @@ src: url(/impact.ttf);
         position: absolute;
         height: 200%;
         width: 100%;
-        
-        
-        
-      }
+        }
       
       
       
@@ -107,10 +99,33 @@ src: url(/impact.ttf);
   </head>
   <body>
       
-      <img src="meltingRed.gif" class="gifImage" alt="Melting"> 
+      <script>
+          
+//    var gifImageGo = document.getElementsByTagName("isGifImage");
+//    var gif_file = "melting.gif";
+//      
+      window.onclick = myFunction;
+
+          // If the user clicks in the window, set the background color of <body> to yellow
+          function myFunction() {
+//            document.getElementsByTagName("BODY")[0].style.backgroundColor = "yellow";
+//              
+              document.getElementById("isGifImage").src ="meltingRed.gif" ;
+            
+//            gifImageGo.src = gif_file;
+}
       
-<img id="image0" src="http://95.230.82.38:81/mjpg/video.mjpg" width="640" max-width="640" height="480" class="center" alt="loading live video feed..." title="Click here to enter the camera located in Italy, region Piemonte, Ovada">
-    
+      </script>
+      
+      <img id="isGifImage" src="meltingRed.png" class="gifImage" alt="Melting"> 
+<!--
+      
+<img id="image0" src="http://80.15.77.137:8080/cgi-bin/faststream.jpg?stream=half&amp;fps=15&amp;rand=COUNTER"  width="640" max-width="640" height="480" class="center"alt="" title="Click here to enter the camera located in France, region Bourgogne, Cluny">
+
+
+-->
+      
+      <img id="image0" src="http://95.230.82.38:81/mjpg/video.mjpg" width="640" max-width="640" height="480" class="center" alt="loading live video feed..." title="Click here to enter the camera located in Italy, region Piemonte, Ovada">
  
  
 <!--  <img id="image0" src="http://212.60.62.51:8080/mjpg/video.mjpg" width="640" max-width="640" height="480" class="center" alt="" title="Click here to enter the camera located in Switzerland, region Bern, Biel">-->
