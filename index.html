@@ -131,20 +131,9 @@ src: url(/impact.ttf);
     var firstImg = "chain.gif";
     var gifHeight = "100%";
           
-          var numOfClicks = 0;
-          
-          //var theElement = document.getElementById("theElement");
-//
-//window.addEventListener("mouseup", tapOrClick, false);
-//theElement.addEventListener("touchend", tapOrClick, false);
-//
-//function tapOrClick(event) {
-//   //handle tap or click.
-//
-//    event.preventDefault();
-//    return false;
-//}
-//          
+    var numOfClicks = 0;
+    var clicksCount = 0;
+       
       window.ontouchend = myFunction;
       window.onclick = myFunction;
 //     document.getElementById("clickHere").onclick=myFunction;
@@ -154,16 +143,19 @@ src: url(/impact.ttf);
 //            document.getElementsByTagName("BODY")[0].style.backgroundColor = "yellow";
               
               if (screen.width < 1000){
-                  gifHeight = "100%";
+                  gifHeight = "250%";
+                  clicksCount = 4;
                   
               }else {
-                  gifHeight = "250%";
+                  gifHeight = "100%";
+                  clicksCount = 0;
               }
               
-              if (numOfClicks == 0){
+              if (numOfClicks == clicksCount){
                     document.getElementById("first").style.height="20%" ;
                     document.getElementById("first").style.width="20%" ;
                   document.getElementById("first").src =firstImg;
+                  clicksCount +=1;
                   
                   
                   
@@ -174,6 +166,7 @@ src: url(/impact.ttf);
                   document.getElementById("isGifImage").style.height=gifHeight ;
                     document.getElementById("isGifImage").style.width="100%" ;
                   document.getElementById("isGifImage").src =gif_file;
+                  clicksCount +=1;
                    
               } 
               numOfClicks += 1;
