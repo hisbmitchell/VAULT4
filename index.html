@@ -114,8 +114,18 @@ src: url(/impact.ttf);
             position: absolute;
             height: 0;
             width: 0;
-            left: 400px;
-            top:
+            left: 10%;
+            top: 120%;
+            
+        }
+        
+         .secondImage {
+        
+            position: absolute;
+            height: 0;
+            width: 0;
+            left: 10%;
+            top: 120%;
             
         }
       
@@ -130,7 +140,9 @@ src: url(/impact.ttf);
           
     var gifImageGo = document.getElementsByTagName("isGifImage");
     var gif_file = "meltingRed2.gif";
-    var firstImg = "chain.gif";
+    var firstImg = "skull.gif";
+    var secondImg = "imgMorph.gif";
+    var thirdImg = "vortexBW.gif";
     var gifHeight = "100%";
           
     var numOfClicks = 0;
@@ -145,7 +157,7 @@ src: url(/impact.ttf);
 //            document.getElementsByTagName("BODY")[0].style.backgroundColor = "yellow";
               
               if (screen.width < 1000){
-                  gifHeight = "130%";
+                  gifHeight = "10%";
                   clicksCount = 4;
                   
               }else {
@@ -153,25 +165,43 @@ src: url(/impact.ttf);
                   clicksCount = 0;
               }
               
-              if (numOfClicks == clicksCount){
-                    document.getElementById("first").style.height="20%" ;
-                    document.getElementById("first").style.width="20%" ;
+              if (numOfClicks == 0){
+                    document.getElementById("first").style.height="70%" ;
+                    document.getElementById("first").style.width="40%" ;
                   document.getElementById("first").src =firstImg;
-                  clicksCount +=1;
+                 
                   
                   
                   
               }
-              
-              
               if (numOfClicks == 1){
+                  document.getElementById("second").style.height="40%" ;
+                    document.getElementById("second").style.width="40%" ;
+                  document.getElementById("second").style.left="40%" ;
+                  document.getElementById("second").style.top="70%" ;
+                  document.getElementById("second").src =secondImg;
+                 
+              }
+              
+                if (numOfClicks == 2){
+                  document.getElementById("third").style.height="60%" ;
+                    document.getElementById("third").style.width="40%" ;
+                     document.getElementById("third").style.left="30%" ;
+                  document.getElementById("third").style.top="140%" ;
+                  document.getElementById("third").src =thirdImg;
+                 
+              }
+              
+              
+              if (numOfClicks == 3){
                   document.getElementById("isGifImage").style.height=gifHeight ;
                     document.getElementById("isGifImage").style.width="100%" ;
                   document.getElementById("isGifImage").src =gif_file;
-                  clicksCount +=1;
+                  
                    
               } 
               numOfClicks += 1;
+                clicksCount +=1;
 //              
             
             
@@ -181,6 +211,9 @@ src: url(/impact.ttf);
       </script>
       
       <img id="first" src="meltingRed.png" class="firstImage" alt="Ball"> 
+      <img id="second" src="meltingRed.png" class="firstImage" alt="Ball"> 
+      <img id="third" src="meltingRed.png" class="firstImage" alt="Ball">
+      
       
       <img id="isGifImage" src="meltingRed.png" class="gifImage" alt="Melting"> 
       
