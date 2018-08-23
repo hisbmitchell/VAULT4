@@ -143,9 +143,10 @@ src: url(/impact.ttf);
           
     var gifImageGo = document.getElementsByTagName("isGifImage");
      var fourthImg = "safeBox3.jpg";
-    var fourthWidth = "522px";
-    var fourthHeight = "643px";
+    var fourthWidth = "492px";
+    var fourthHeight = "613px";
     var fourthImgTwo = "safeBox5.jpg";
+    var fourthImgTwoTop = "75%";
     var gif_file = "meltingRed3.gif";
     var firstImg = "skullSmall.gif";
     var secondImg = "imgMorphSmall.gif";
@@ -190,7 +191,8 @@ src: url(/impact.ttf);
                   fourthImg = "safeMobile.jpg"
                   fourthWidth = "700px";
                   facesHeight = "70%";
-                    fourthHeight = "905px";
+                  fourthHeight = "905px";
+                  fourthImgTwoTop = "75%";
                   
                   
               }else {
@@ -198,6 +200,7 @@ src: url(/impact.ttf);
                   secondHeight = "160%";
                   thirdHeight = "145%";
                   facesHeight = "120%";
+                  fourthImgTwoTop = "130%";
                  
               }
               
@@ -205,7 +208,7 @@ src: url(/impact.ttf);
                   document.getElementById("fourth").style.width=fourthWidth ;
                     document.getElementById("fourth").style.height=fourthHeight ;
                      document.getElementById("fourth").style.left="25%" ;
-                  document.getElementById("fourth").style.top="15%" ;
+                  document.getElementById("fourth").style.top="5%" ;
                   document.getElementById("fourth").src =fourthImg;
                  
               }
@@ -214,7 +217,7 @@ src: url(/impact.ttf);
                   document.getElementById("fourthTwo").style.width=fourthWidth ;
                     document.getElementById("fourthTwo").style.height=fourthHeight ;
                      document.getElementById("fourthTwo").style.left="15%" ;
-                  document.getElementById("fourthTwo").style.top="55%" ;
+                  document.getElementById("fourthTwo").style.top=fourthImgTwoTop ;
                   document.getElementById("fourthTwo").src =fourthImgTwo;
                  
               }
