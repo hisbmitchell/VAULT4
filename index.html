@@ -145,7 +145,8 @@ src: url(/impact.ttf);
     var gif_file = "meltingRed3.gif";
     var firstImg = "skullSmall.gif";
     var secondImg = "imgMorphSmall.gif";
-    var thirdImg = "safe.jpg";
+    var thirdImg = "vortexBWSmall.gif";
+    var fourthImg = "safe.jpg";
     var gifHeight = "100%";
     var secondHeight = "90%";
     var numOfClicks = clicksNum();
@@ -200,16 +201,7 @@ src: url(/impact.ttf);
                  
               }
               
-//                if (numOfClicks == 2){
-//                  document.getElementById("third").style.width="400px" ;
-//                    document.getElementById("third").style.height="270px" ;
-//                     document.getElementById("third").style.left="45%" ;
-//                  document.getElementById("third").style.top="55%" ;
-//                  document.getElementById("third").src =thirdImg;
-//                 
-//              }
-              
-                   if (numOfClicks == 2){
+                if (numOfClicks == 2){
                   document.getElementById("third").style.width="400px" ;
                     document.getElementById("third").style.height="270px" ;
                      document.getElementById("third").style.left="45%" ;
@@ -218,8 +210,17 @@ src: url(/impact.ttf);
                  
               }
               
+                   if (numOfClicks == 3){
+                  document.getElementById("fourth").style.width="300px" ;
+                    document.getElementById("fourth").style.height="388px" ;
+                     document.getElementById("fourth").style.left="45%" ;
+                  document.getElementById("fourth").style.top="75%" ;
+                  document.getElementById("fourth").src =fourthImg;
+                 
+              }
               
-              if (numOfClicks == 3){
+              
+              if (numOfClicks == 4){
                   document.getElementById("isGifImage").style.height=gifHeight ;
                     document.getElementById("isGifImage").style.width="100%" ;
                   document.getElementById("isGifImage").src =gif_file;
@@ -239,6 +240,7 @@ src: url(/impact.ttf);
       <img id="first" src="meltingRed.png" class="firstImage" alt="skull"> 
       <img id="second" src="meltingRed.png" class="firstImage" alt="morph"> 
       <img id="third" src="meltingRed.png" class="firstImage" alt="vortex">
+      <img id="fourth" src="meltingRed.png" class="firstImage" alt="safe space">
       
       
       <img id="isGifImage" src="meltingRed.png" class="gifImage" alt="Melting"> 
