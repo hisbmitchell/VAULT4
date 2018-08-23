@@ -146,9 +146,10 @@ src: url(/impact.ttf);
     var firstImg = "skullSmall.gif";
     var secondImg = "imgMorphSmall.gif";
     var thirdImg = "vortexBWSmall.gif";
-    var fourthImg = "safeMobile.jpg";
-    var fourthWidth = "550px";
-    var fourthHeight = "711px";
+    var fourthImg = "safeBox1.jpg";
+    var fourthWidth = "522px";
+    var fourthHeight = "643px";
+    var fourthImgTwo = "safeBox2.jpg";
           
            var fifthImg = "faces.gif";
            var sixthImg = "bugs.gif";
@@ -235,7 +236,16 @@ src: url(/impact.ttf);
                  
               }
               
-                  if (numOfClicks == 4){
+               if (numOfClicks == 4){
+                  document.getElementById("fourthTwo").style.width=fourthWidth ;
+                    document.getElementById("fourthTwo").style.height=fourthHeight ;
+                     document.getElementById("fourthTwo").style.left="45%" ;
+                  document.getElementById("fourthTwo").style.top="55%" ;
+                  document.getElementById("fourthTwo").src =fourthImgTwo;
+                 
+              }
+              
+                  if (numOfClicks == 5){
                   document.getElementById("fifth").style.width="325px" ;
                     document.getElementById("fifth").style.height="350px" ;
                      document.getElementById("fifth").style.left="10%" ;
@@ -243,7 +253,7 @@ src: url(/impact.ttf);
                   document.getElementById("fifth").src =fifthImg;
                   }
                       
-                          if (numOfClicks == 5){
+                          if (numOfClicks == 6){
                   document.getElementById("sixth").style.width="400px" ;
                     document.getElementById("sixth").style.height="265px" ;
                      document.getElementById("sixth").style.left="55%" ;
@@ -251,7 +261,7 @@ src: url(/impact.ttf);
                   document.getElementById("sixth").src =sixthImg;
                  
               }
-                      if (numOfClicks == 6){
+                      if (numOfClicks == 7){
                   document.getElementById("seventh").style.width="320px" ;
                     document.getElementById("seventh").style.height="245px" ;
                      document.getElementById("seventh").style.left="60%" ;
@@ -282,6 +292,7 @@ src: url(/impact.ttf);
       <img id="second" src="meltingRed.png" class="firstImage" alt="morph"> 
       <img id="third" src="meltingRed.png" class="firstImage" alt="vortex">
       <img id="fourth" src="meltingRed.png" class="firstImage" alt="safe space">
+      <img id="fourthTwo" src="meltingRed.png" class="firstImage" alt="safe space">
       <img id="fifth" src="meltingRed.png" class="firstImage" alt="safe space">
       <img id="sixth" src="meltingRed.png" class="firstImage" alt="BUGS">
       <img id="seventh" src="meltingRed.png" class="firstImage" alt="bdsm">
