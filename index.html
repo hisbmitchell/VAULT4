@@ -142,14 +142,15 @@ src: url(/impact.ttf);
       <script>
           
     var gifImageGo = document.getElementsByTagName("isGifImage");
+     var fourthImg = "safeBox1.jpg";
+    var fourthWidth = "522px";
+    var fourthHeight = "643px";
+    var fourthImgTwo = "safeBox2.jpg";
     var gif_file = "meltingRed3.gif";
     var firstImg = "skullSmall.gif";
     var secondImg = "imgMorphSmall.gif";
     var thirdImg = "vortexBWSmall.gif";
-    var fourthImg = "safeBox1.jpg";
-    var fourthWidth = "522px";
-    var fourthHeight = "643px";
-    var fourthImgTwo = "safeBox2.jpg";
+   
           
            var fifthImg = "faces.gif";
            var sixthImg = "bugs.gif";
@@ -200,34 +201,7 @@ src: url(/impact.ttf);
                  
               }
               
-              if (numOfClicks == 0){
-                  document.getElementById("first").style.width="410px" ;
-                  document.getElementById("first").style.height="269px" ;
-                  document.getElementById("first").src =firstImg;
-                 
-                  
-                  
-                  
-              }
-              if (numOfClicks == 1){
-                  document.getElementById("second").style.height="225px" ;
-                    document.getElementById("second").style.width="250px" ;
-                  document.getElementById("second").style.left="40%" ;
-                  document.getElementById("second").style.top=secondHeight ;
-                  document.getElementById("second").src =secondImg;
-                 
-              }
-              
-                if (numOfClicks == 2){
-                  document.getElementById("third").style.width="400px" ;
-                    document.getElementById("third").style.height="270px" ;
-                     document.getElementById("third").style.left="45%" ;
-                  document.getElementById("third").style.top="55%" ;
-                  document.getElementById("third").src =thirdImg;
-                 
-              }
-              
-                   if (numOfClicks == 3){
+                 if (numOfClicks == 0){
                   document.getElementById("fourth").style.width=fourthWidth ;
                     document.getElementById("fourth").style.height=fourthHeight ;
                      document.getElementById("fourth").style.left="25%" ;
@@ -236,7 +210,7 @@ src: url(/impact.ttf);
                  
               }
               
-               if (numOfClicks == 4){
+               if (numOfClicks == 1){
                   document.getElementById("fourthTwo").style.width=fourthWidth ;
                     document.getElementById("fourthTwo").style.height=fourthHeight ;
                      document.getElementById("fourthTwo").style.left="45%" ;
@@ -244,6 +218,35 @@ src: url(/impact.ttf);
                   document.getElementById("fourthTwo").src =fourthImgTwo;
                  
               }
+              
+              if (numOfClicks == 2){
+                  document.getElementById("first").style.width="410px" ;
+                  document.getElementById("first").style.height="269px" ;
+                  document.getElementById("first").src =firstImg;
+                 
+                  
+                  
+                  
+              }
+              if (numOfClicks == 3){
+                  document.getElementById("second").style.height="225px" ;
+                    document.getElementById("second").style.width="250px" ;
+                  document.getElementById("second").style.left="40%" ;
+                  document.getElementById("second").style.top=secondHeight ;
+                  document.getElementById("second").src =secondImg;
+                 
+              }
+              
+                if (numOfClicks == 4){
+                  document.getElementById("third").style.width="400px" ;
+                    document.getElementById("third").style.height="270px" ;
+                     document.getElementById("third").style.left="45%" ;
+                  document.getElementById("third").style.top="55%" ;
+                  document.getElementById("third").src =thirdImg;
+                 
+              }
+              
+                
               
                   if (numOfClicks == 5){
                   document.getElementById("fifth").style.width="325px" ;
@@ -288,11 +291,12 @@ src: url(/impact.ttf);
       
       </script>
       
+        <img id="fourth" src="meltingRed.png" class="firstImage" alt="safe space">
+      <img id="fourthTwo" src="meltingRed.png" class="firstImage" alt="safe space">
       <img id="first" src="meltingRed.png" class="firstImage" alt="skull"> 
       <img id="second" src="meltingRed.png" class="firstImage" alt="morph"> 
       <img id="third" src="meltingRed.png" class="firstImage" alt="vortex">
-      <img id="fourth" src="meltingRed.png" class="firstImage" alt="safe space">
-      <img id="fourthTwo" src="meltingRed.png" class="firstImage" alt="safe space">
+    
       <img id="fifth" src="meltingRed.png" class="firstImage" alt="safe space">
       <img id="sixth" src="meltingRed.png" class="firstImage" alt="BUGS">
       <img id="seventh" src="meltingRed.png" class="firstImage" alt="bdsm">
