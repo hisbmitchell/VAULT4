@@ -147,7 +147,7 @@ src: url(/impact.ttf);
     var secondImg = "imgMorphSmall.gif";
     var thirdImg = "vortexBWSmall.gif";
     var gifHeight = "100%";
-          
+    var secondHeight = "90%";
     var numOfClicks = clicksNum();
     
           
@@ -173,10 +173,12 @@ src: url(/impact.ttf);
               
               if (screen.width < 1000){
                   gifHeight = "125%";
+                  secondHeight = "90%";
                   
                   
               }else {
                   gifHeight = "270%";
+                  secondHeight = "160%";
                  
               }
               
@@ -193,7 +195,7 @@ src: url(/impact.ttf);
                   document.getElementById("second").style.height="225px" ;
                     document.getElementById("second").style.width="250px" ;
                   document.getElementById("second").style.left="40%" ;
-                  document.getElementById("second").style.top="90%" ;
+                  document.getElementById("second").style.top=secondHeight ;
                   document.getElementById("second").src =secondImg;
                  
               }
