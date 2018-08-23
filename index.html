@@ -150,6 +150,10 @@ src: url(/impact.ttf);
     var fourthWidth = "550px";
     var fourthHeight = "711px";
           
+           var fifthImg = "faces.gif";
+           var sixthImg = "bugs.gif";
+          var seventhImg = "bdsm2.jpg";
+          
     var gifHeight = "100%";
     var secondHeight = "90%";
     var numOfClicks = clicksNum();
@@ -225,8 +229,33 @@ src: url(/impact.ttf);
                  
               }
               
+                  if (numOfClicks == 4){
+                  document.getElementById("fifth").style.width="325px" ;
+                    document.getElementById("fifth").style.height="350px" ;
+                     document.getElementById("fifth").style.left="10%" ;
+                  document.getElementById("fifth").style.top="55%" ;
+                  document.getElementById("fifth").src =fifthImg;
+                  }
+                      
+                          if (numOfClicks == 5){
+                  document.getElementById("sixth").style.width="400px" ;
+                    document.getElementById("sixth").style.height="265px" ;
+                     document.getElementById("sixth").style.left="55%" ;
+                  document.getElementById("sixth").style.top="75%" ;
+                  document.getElementById("sixth").src =sixthImg;
+                 
+              }
+                      if (numOfClicks == 6){
+                  document.getElementById("seventh").style.width="320px" ;
+                    document.getElementById("seventh").style.height="245px" ;
+                     document.getElementById("seventh").style.left="45%" ;
+                  document.getElementById("seventh").style.top="85%" ;
+                  document.getElementById("seventh").src =seventhImg;
+                 
+              }
               
-              if (numOfClicks == 4){
+              
+              if (numOfClicks == 7){
                   document.getElementById("isGifImage").style.height=gifHeight ;
                     document.getElementById("isGifImage").style.width="100%" ;
                   document.getElementById("isGifImage").src =gif_file;
@@ -247,6 +276,9 @@ src: url(/impact.ttf);
       <img id="second" src="meltingRed.png" class="firstImage" alt="morph"> 
       <img id="third" src="meltingRed.png" class="firstImage" alt="vortex">
       <img id="fourth" src="meltingRed.png" class="firstImage" alt="safe space">
+      <img id="fifth" src="meltingRed.png" class="firstImage" alt="safe space">
+      <img id="sixth" src="meltingRed.png" class="firstImage" alt="BUGS">
+      <img id="seventh" src="meltingRed.png" class="firstImage" alt="bdsm">
       
       
       <img id="isGifImage" src="meltingRed.png" class="gifImage" alt="Melting"> 
