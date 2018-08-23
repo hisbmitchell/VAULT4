@@ -158,14 +158,28 @@ src: url(/impact.ttf);
     var secondHeight = "90%";
     var thirdHeight = "80%";
     var numOfClicks = clicksNum();
-  
+    
+          
+            function clicksNum() {
+                if (screen.width < 900){
+                  
+                  return -1;
+                  
+              }else{
+                 
+                  return 0;
+              }
+            }
+       
        
       window.ontouchend = myFunction;
       window.onclick = myFunction;
-
-
+//     document.getElementById("clickHere").onclick=myFunction;
+          
+          // If the user clicks in the window, set the background color of <body> to yellow
           function myFunction() {
-  
+//            document.getElementsByTagName("BODY")[0].style.backgroundColor = "yellow";
+              
               if (screen.width < 1000){
                   gifHeight = "125%";
                   secondHeight = "90%";
@@ -222,7 +236,7 @@ src: url(/impact.ttf);
                   document.getElementById("fifth").style.width="325px" ;
                     document.getElementById("fifth").style.height="350px" ;
                      document.getElementById("fifth").style.left="10%" ;
-                  document.getElementById("fifth").style.top=thirdHeight ;
+                  document.getElementById("fifth").style.top="55%" ;
                   document.getElementById("fifth").src =fifthImg;
                   }
                       
@@ -230,7 +244,7 @@ src: url(/impact.ttf);
                   document.getElementById("sixth").style.width="400px" ;
                     document.getElementById("sixth").style.height="265px" ;
                      document.getElementById("sixth").style.left="55%" ;
-                  document.getElementById("sixth").style.top= "80%" ;
+                  document.getElementById("sixth").style.top=thirdHeight ;
                   document.getElementById("sixth").src =sixthImg;
                  
               }
@@ -276,11 +290,9 @@ src: url(/impact.ttf);
 <!--
       
 <img id="image0" src="http://80.15.77.137:8080/cgi-bin/faststream.jpg?stream=half&amp;fps=15&amp;rand=COUNTER"  width="640" max-width="640" height="480" class="center"alt="" title="Click here to enter the camera located in France, region Bourgogne, Cluny">
-
-
 -->
       
-      <img id="image0" src="vault3.gif" width="640" max-width="640" height="480" class="center" alt="loading live video feed..." title="Live from VAULT">
+      <img id="image0" src="vault3.gif" width="640" max-width="640" height="480" class="center" alt="loading live video feed..." title="Live from ">
  
  
 <!--  <img id="image0" src="http://212.60.62.51:8080/mjpg/video.mjpg" width="640" max-width="640" height="480" class="center" alt="" title="Click here to enter the camera located in Switzerland, region Bern, Biel">-->
