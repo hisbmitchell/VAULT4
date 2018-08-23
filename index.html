@@ -158,28 +158,14 @@ src: url(/impact.ttf);
     var secondHeight = "90%";
     var thirdHeight = "80%";
     var numOfClicks = clicksNum();
-    
-          
-            function clicksNum() {
-                if (screen.width < 900){
-                  
-                  return -1;
-                  
-              }else{
-                 
-                  return 0;
-              }
-            }
-       
+  
        
       window.ontouchend = myFunction;
       window.onclick = myFunction;
-//     document.getElementById("clickHere").onclick=myFunction;
-          
-          // If the user clicks in the window, set the background color of <body> to yellow
+
+
           function myFunction() {
-//            document.getElementsByTagName("BODY")[0].style.backgroundColor = "yellow";
-              
+  
               if (screen.width < 1000){
                   gifHeight = "125%";
                   secondHeight = "90%";
